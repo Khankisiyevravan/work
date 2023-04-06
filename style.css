@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.mobile {
+  max-width: 500px;
+  width: 100%;
+  /* height: 100vh; */
+  padding-top: 80px;
+  border: 1px solid black;
+}
+header {
+  padding: 0 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.header-text {
+  position: relative;
+}
+.header-text p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  position: relative;
+  padding-left: 23px;
+}
+.header-text::before {
+  content: "";
+  background-image: url("/rectangle1.jpg");
+  background-repeat: no-repeat;
+  bottom: -5px;
+  width: 51px;
+  height: 47px;
+  position: absolute;
+  left: 0;
+}
+.header-right {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+.user {
+  width: 47px;
+  height: 47px;
+}
+.user img {
+  width: 100%;
+  height: 100%;
+}
+.burger {
+  width: 20px;
+  height: 17px;
+  transition: 0.7s;
+}
+.burger.active {
+  transition: 0.7s;
+  transform: rotate(90deg);
+}
+nav {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  z-index: 222;
+  background-color: #e109a5;
+  width: 280px;
+  height: 600px;
+  border-radius: 20px 0px 0px 20px;
+  transform: translateX(100%);
+  transition: 0.7s;
+}
+nav.active {
+  transform: translateX(0);
+  transition: 0.7s;
+}
+nav ul li {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
+  text-align: right;
+  color: white;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+nav span {
+  margin-top: 30px;
+  display: block;
+  font-size: 14px;
+  line-height: 29px;
+  text-align: right;
+  color: white;
+  margin-right: 50px;
+}
+nav button {
+  margin-right: 50px;
+  /* margin-top: ; */
+  display: block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+  color: white;
+  text-align: right;
+  margin-left: auto;
+}
+.burger img {
+  width: 100%;
+  height: 100%;
+}
+form {
+  margin: 0 auto;
+  padding: 0 29px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  margin: 26px 9px 25px 9px;
+  width: calc(100% - 18px);
+}
+.image img {
+  width: 100%;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-group:nth-child(n + 2) {
+  margin-top: 30px;
+}
+.form-group label {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0 4px;
+}
+.form-group input {
+  height: 50px;
+  width: 100%;
+  background-color: #ededed;
+  border-radius: 9px;
+  line-height: 30px;
+  border: 1px solid #ededed;
+  padding: 0 10px;
+}
+.btn {
+  border: 1px solid #e109a5;
+  background-color: #e109a5;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.2px;
+  width: 276px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  margin-top: 8px;
+  max-width: 100%;
+}
+.information {
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  background-color: #e109a5;
+  width: 100%;
+  /* height: 720px; */
+  margin-top: 38.5px;
+  padding: 30px 21px 0 28px;
+  position: relative;
+}
+.information h4 {
+  padding-top: 40px;
+  color: white;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "Buttermilk", sans-serif;
+  font-weight: 600;
+}
+.information .text {
+  margin-top: 30px;
+  display: flex;
+  gap: 22px;
+  flex-direction: column;
+}
+.information .text p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: white;
+}
+.information .text span {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: white;
+}
+.information .text + span {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: #ffffff;
+  padding: 35px 0;
+}
+.icon {
+  position: absolute;
+  width: 93px;
+  height: 63px;
+  bottom: 41px;
+  right: 36px;
+}
+.icon img {
+  width: 100%;
+  height: 100%;
+}
